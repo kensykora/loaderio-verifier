@@ -9,7 +9,7 @@
         <licenseUrl>https://raw.githubusercontent.com/kensykora/loaderio-verifier/master/LICENSE</licenseUrl>
         <projectUrl>https://github.com/kensykora/loaderio-verifier</projectUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>Loader.IO requires that you create a URL to verify your site to be load tested. This can be problematic if you are using the cloud and have IPs that dynamically change. This addresses the solution by making it easier to dynamically verify your site, simply by setting a web.config value.</description>
+        <description>Loader.IO requires that you create a URL to verify your site to be load tested. This can be problematic if you are using a cloud host and have DNS that changes regularly, or if you simply want a more elegant solution than having to update a text file for each environment you load test. This addresses these problems by making it easier to dynamically verify your site, simply by setting a web.config value. Install this package, and update the LoaderIOResponder appSetting in your web.config with your hex code from loader.io's verification page.</description>
         <summary>Creates a URL for your ASP.Net websites that allows loader.io to verify your site given a validation value in web.config</summary>
         <releaseNotes />
         <copyright>Copyright 2014</copyright>
