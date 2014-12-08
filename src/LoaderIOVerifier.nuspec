@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>LoaderIOVerifier</id>
+        <title>loader.io verifier</title>
+		<version>0.1.0</version>
+        <authors>Ken Sykora</authors>
+        <owners>ken.sykora</owners>
+        <projectUrl>https://github.com/kensykora/loaderio-verifier</projectUrl>
+		<licenseUrl>https://raw.githubusercontent.com/kensykora/loaderio-verifier/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<summary>Creates a URL for your ASP.Net websites that allows loader.io to verify your site given a validation value in web.config</summary>
+        <description>Loader.IO requires that you create a URL to verify your site to be load tested. This can be problematic if you are using the cloud and have IPs that dynamically change. This addresses the solution by making it easier to dynamically verify your site, simply by setting a web.config value.</description>
+        <releaseNotes />
+        <copyright>Copyright 2014</copyright>
+        <tags>C# LoadTesting LoaderIO</tags>
+    </metadata>
+</package>
