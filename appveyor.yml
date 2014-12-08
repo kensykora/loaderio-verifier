@@ -36,4 +36,4 @@ deploy:
     artifact: /LoaderIOVerifier\.([0-9]+)\.([0-9]+)\.([0-9]+)\.nupkg/
     on:
       configuration: Release
-	  appveyor_repo_tag: true
+      appveyor_repo_tag: true
