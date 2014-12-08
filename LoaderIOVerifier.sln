@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoaderIOVerifier", "src\LoaderIOVerifier.csproj", "{8C0D6DBA-583C-4990-A372-DD52FFF25160}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{4406CF64-7952-490F-B275-2B7EA5DC4D72}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{6BD6206D-B9F7-48FF-B5EA-A5123F92727B}"
+	ProjectSection(SolutionItems) = preProject
+		CONTRIBUTING.md = CONTRIBUTING.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C0D6DBA-583C-4990-A372-DD52FFF25160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0D6DBA-583C-4990-A372-DD52FFF25160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0D6DBA-583C-4990-A372-DD52FFF25160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0D6DBA-583C-4990-A372-DD52FFF25160}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
