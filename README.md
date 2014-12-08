@@ -38,3 +38,4 @@ to override the value you have set. Works great with web.config transforms, too!
 # Contributing
 
 Pull requests welcomed. Please ensure you create your edits in a branch off of the `develop` branch, not the `master` branch.
+Develop builds can be installed from the nuget project feed https://ci.appveyor.com/nuget/loaderio-verifier-25pownxbfgr1/
