@@ -14,8 +14,12 @@
         <releaseNotes />
         <copyright>Copyright 2014</copyright>
         <tags>C# LoadTesting LoaderIO</tags>
+        <dependencies>
+            <dependency id="WebActivatorEx" version="2.0.0" />
+        </dependencies>
     </metadata>
     <files>
+        <file src="LoaderIOVerifierRouteRegistration.cs.pp" target="content\App_Start\LoaderIOVerifierRouteRegistration.cs.pp" />
         <file src="web.config.install.xdt" target="content\web.config.install.xdt" />
         <file src="web.config.uninstall.xdt" target="content\web.config.uninstall.xdt" />
     </files>
