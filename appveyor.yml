@@ -1,0 +1,34 @@
+environment:
+  CURRENT_VERSION: 0.1.0
+version: 0.1.0-{build}
+branches:
+  only:
+    - master
+    - develop
+    - release/*
+    - feature/*
+os: Windows Server 2012
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: "$(CURRENT_VERSION).{build}"
+  assembly_file_version: "$(CURRENT_VERSION).{build}"
+  assembly_informational_version: "$(CURRENT_VERSION).{build}"
+cache:
+  - packages
+configuration:
+  - Debug
+  - Release
+after_build:
+  - nuget pack src/LoaderIOVerifier.csproj -Symbols -Version %CURRENT_VERSION%-build%APPVEYOR_BUILD_NUMBER%
+  - nuget pack src/LoaderIOVerifier.csproj -Version %CURRENT_VERSION%
+artifacts:
+  - path: "*.nupkg"
+deploy:
+  - provider: NuGet
+    api_key:
+      secure: noezKJTCLnChPyCEDjavefNLADCHjXbQapyihxDYQwbp7KkyuCZT8pJ2zdWogiuN
+    artifact: /LoaderIOVerifier\.([0-9]+)\.([0-9]+)\.([0-9]+)-build(.*)\.nupkg/
+    on:
+      branch: develop
+      configuration: Debug
