@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<configuration  xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <appSettings>
+	<!-- NOTE: Change this value to your Loader.IO Key -->
+    <add key="LoaderIOKey" value="de69634b6d121e9cd0d5ea481dc091a7" xdt:Transform="Remove" xdt:Locator="Match(key)" />
+  </appSettings>
+  <system.webServer>
+    <handlers>
+      <add name="LoaderIOResponder" path="loaderio-*.txt" verb="*" type="LoaderIOVerifier.Responder, LoaderIOVerifier" xdt:Transform="Remove" xdt:Locator="Match(name)" />
+    </handlers>
+  </system.webServer>
+</configuration>
