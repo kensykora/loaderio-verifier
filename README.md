@@ -2,9 +2,7 @@
 
 Creates a URL for your ASP.Net websites that allows loader.io to verify your site given a validation value in web.config.
 
-### Build Status:
-
-| Branch | Status |
+| Branch | Build Status |
 | ------ | ------ |
 | master | [![Build status](https://ci.appveyor.com/api/projects/status/9781pidt35cay4it?svg=true)](https://ci.appveyor.com/project/kensykora/loaderio-verifier) |
 | develop | [![Build status](https://ci.appveyor.com/api/projects/status/9781pidt35cay4it/branch/develop?svg=true)](https://ci.appveyor.com/project/kensykora/loaderio-verifier/branch/develop) |
@@ -38,3 +36,8 @@ to override the value you have set. Works great with web.config transforms, too!
 # Contributing
 
 Pull requests welcomed. Please ensure you create your edits in a branch off of the `develop` branch, not the `master` branch.
+Develop builds can be installed from the nuget project feed.
+
+```
+PM> Install-Package LoaderIOVerifier -Source https://ci.appveyor.com/nuget/loaderio-verifier-25pownxbfgr1/
+``` 
